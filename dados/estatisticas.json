@@ -1,0 +1,110 @@
+{
+ "resumo": {
+  "n": 100,
+  "consumo_media": 3.01,
+  "consumo_dp": 1.13,
+  "pct_decidiu": 74.0,
+  "pct_pressao": 51.0,
+  "pct_prejuizo_decididos": 40.5,
+  "pct_lucro_decididos": 47.3,
+  "n_testes": 12
+ },
+ "testes": [
+  {
+   "t": "H1: Quem consome mais conteúdo financeiro decide mais por recomendação?",
+   "e": "ρ de Spearman = 0,33 (IC95% 0,13 a 0,50)",
+   "p": 0.0009094692900515821,
+   "ef": "correlação moderado",
+   "pa": 0.010913631480618986,
+   "r": "Significativo a 5% mesmo após a correção de Bonferroni para 12 testes."
+  },
+  {
+   "t": "H2: Quem consome mais confia mais em influenciadores?",
+   "e": "ρ de Spearman = 0,15 (IC95% -0,06 a 0,35)",
+   "p": 0.134763471756216,
+   "ef": "correlação fraco",
+   "pa": 1.0,
+   "r": "Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."
+  },
+  {
+   "t": "Consumo de conteúdo financeiro × tempo diário nas redes",
+   "e": "ρ de Spearman = 0,14 (IC95% -0,07 a 0,34)",
+   "p": 0.17240028894383225,
+   "ef": "correlação fraco",
+   "pa": 1.0,
+   "r": "Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."
+  },
+  {
+   "t": "Consumo de conteúdo financeiro × número de redes usadas",
+   "e": "ρ de Spearman = 0,35 (IC95% 0,15 a 0,52)",
+   "p": 0.0003792676450317773,
+   "ef": "correlação moderado",
+   "pa": 0.004551211740381328,
+   "r": "Significativo a 5% mesmo após a correção de Bonferroni para 12 testes."
+  },
+  {
+   "t": "Confiança em influenciadores × decisões tomadas por recomendação",
+   "e": "ρ de Spearman = 0,18 (IC95% -0,03 a 0,37)",
+   "p": 0.0748332071531188,
+   "ef": "correlação fraco",
+   "pa": 0.8979984858374255,
+   "r": "Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."
+  },
+  {
+   "t": "H3: Sentir pressão está associado a dizer que é influenciado?",
+   "e": "χ² = 7,09; V de Cramér = 0,27",
+   "p": 0.007740687589406888,
+   "ef": "associação pequena",
+   "pa": 0.09288825107288266,
+   "r": "Significativo a 5% isoladamente, mas não resiste à correção para 12 testes: trate como indício."
+  },
+  {
+   "t": "Sentir pressão × já ter decidido por recomendação",
+   "e": "χ² = 1,58; V de Cramér = 0,13",
+   "p": 0.20813746735529878,
+   "ef": "associação pequena",
+   "pa": 1.0,
+   "r": "Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."
+  },
+  {
+   "t": "H4: Quem sente pressão consome mais conteúdo financeiro?",
+   "e": "U = 1817; r = 0,45; mediana 4 vs 3",
+   "p": 5.3298415793634004e-05,
+   "ef": "efeito moderado",
+   "pa": 0.0006395809895236081,
+   "r": "Significativo a 5% mesmo após a correção de Bonferroni para 12 testes."
+  },
+  {
+   "t": "Gênero × sentir pressão (apenas Feminino e Masculino)",
+   "e": "χ² = 0,39; V de Cramér = 0,06",
+   "p": 0.5297798828850608,
+   "ef": "associação desprezível",
+   "pa": 1.0,
+   "r": "Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."
+  },
+  {
+   "t": "H5: O consumo de conteúdo difere entre faixas de renda?",
+   "e": "H = 3,65; ε² = -0,004",
+   "p": 0.4554331124828336,
+   "ef": "efeito desprezível",
+   "pa": 1.0,
+   "r": "Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."
+  },
+  {
+   "t": "Consumo de conteúdo difere entre faixas de idade?",
+   "e": "H = 2,71; ε² = -0,014",
+   "p": 0.6082371940747127,
+   "ef": "efeito pequeno",
+   "pa": 1.0,
+   "r": "Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."
+  },
+  {
+   "t": "Consumo de conteúdo difere entre ocupações?",
+   "e": "H = 7,02; ε² = 0,032",
+   "p": 0.1350670686180034,
+   "ef": "efeito pequeno",
+   "pa": 1.0,
+   "r": "Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."
+  }
+ ]
+}

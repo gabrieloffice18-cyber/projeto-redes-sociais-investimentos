@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Redes sociais e decisões de investimento: painel executivo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Newsreader:opsz,wght@6..72,500;6..72,700&display=swap">
+<style>
+:root{--bg:#EEF1F4;--sf:#fff;--ink:#17212B;--mu:#5B6875;--ln:#D5DBE1;--ac:#0E7C86;--onac:#fff;--a2:#A85A12;--ng:#B23A52;--ps:#2F7D4F;--a3:#5B69C4;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F1620;--sf:#17212C;--ink:#E7ECF1;--mu:#93A1AF;--ln:#2A3846;--ac:#4FC3CC;--onac:#0F1620;--a2:#E6A25C;--ng:#E07088;--ps:#6CC28E;--a3:#8C99EE;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F1620;--sf:#17212C;--ink:#E7ECF1;--mu:#93A1AF;--ln:#2A3846;--ac:#4FC3CC;--onac:#0F1620;--a2:#E6A25C;--ng:#E07088;--ps:#6CC28E;--a3:#8C99EE;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 'IBM Plex Sans',system-ui,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:20}
+.w{max-width:1180px;margin:0 auto;padding:0 18px}
+header{padding:22px 0 10px}
+header .w{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+h1{font:700 clamp(25px,4vw,38px)/1.1 Newsreader,Georgia,serif;margin:0 0 6px;letter-spacing:-.01em}
+.sub{margin:0;color:var(--mu);max-width:62ch}
+.tag{border:1.5px solid var(--a2);color:var(--a2);padding:3px 11px;border-radius:14px;font-weight:600;font-size:13px}
+button{font:inherit;color:var(--ink);cursor:pointer}
+button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible{outline:2px solid var(--ac);outline-offset:2px}
+.hb{display:flex;gap:8px;align-items:center}
+.hb button,.st button{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:3px 12px;font-size:13px}
+details.fl{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:8px 14px}
+details summary{cursor:pointer;font-weight:600}
+.gr{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:7px 0}
+.gr span{min-width:140px;color:var(--mu);font-size:13px}
+.ch{background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:3px 11px;font-size:13px}
+.ch.on{background:var(--ac);border-color:var(--ac);color:var(--onac)}
+.stk{position:sticky;top:env(safe-area-inset-top,0px);z-index:15;background:var(--bg);margin-top:8px;border-bottom:1px solid var(--ln)}
+.st{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding-top:8px;padding-bottom:8px;font-size:14px}
+.st label{margin-left:auto;display:flex;gap:6px;align-items:center}
+.pl{background:var(--sf);border:1px solid var(--ac);border-radius:14px;padding:1px 10px;font-size:13px}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px;margin:16px auto}
+.kc{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:12px 14px}
+.kc b{display:block;font:700 34px/1.1 Newsreader,Georgia,serif;color:var(--ac)}
+.kc small{display:block;color:var(--mu);font-size:12.5px}
+nav.tb{display:flex;gap:4px;overflow-x:auto;border-bottom:1px solid var(--ln);margin-bottom:16px}
+nav.tb a{padding:9px 13px;color:var(--mu);text-decoration:none;white-space:nowrap;border-bottom:3px solid transparent}
+nav.tb a.on{color:var(--ink);font-weight:600;border-color:var(--ac)}
+.g2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:14px;margin-bottom:14px}
+.cd{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:14px;min-width:0}
+.cd h3{font-size:15px;margin:0 0 2px}
+.hn{color:var(--mu);font-size:13px;margin:2px 0 8px}
+.cv{height:270px;position:relative}
+.ov{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{border:1px solid var(--ln);padding:6px 9px;text-align:left}
+td{text-align:center}
+#dc td{text-align:left}
+details.ts{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:10px 14px;margin-bottom:8px}
+details.ts summary{display:flex;justify-content:space-between;gap:12px}
+.sg{color:var(--ps)}.ns{color:var(--mu);white-space:nowrap}
+ul{padding-left:20px}li{margin-bottom:8px;max-width:75ch}
+footer{color:var(--mu);font-size:13px;padding:22px 18px 30px}
+@media print{.stk,#fb,nav.tb,.hb{display:none}.pn{display:block!important}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header><div class="w">
+ <div><h1>Redes sociais e decisões de investimento</h1>
+ <p class="sub">Painel executivo do projeto de Ciência de Dados e Programação, Strong Business School. Filtre pelo perfil ou clique em qualquer gráfico para recalcular tudo.</p></div>
+ <div class="hb"><span class="tag">Dados simulados: protótipo</span><button id="th" type="button">Tema claro/escuro</button><button id="pr" type="button">Imprimir</button></div>
+</div></header>
+<section class="w" id="fb"><details class="fl" open><summary>Filtros por perfil</summary><div id="fl"></div></details></section>
+<div class="stk"><div class="w st"><b id="nn"></b><span id="ap"></span><button id="cl" type="button" hidden>Limpar filtros</button><label><input type="checkbox" id="pc"> Mostrar em %</label></div></div>
+<main class="w">
+<section class="kp" id="kp" aria-label="Indicadores principais"></section>
+<nav class="tb" id="tb" aria-label="Seções"></nav>
+
+<section class="pn" id="visao">
+ <div class="g2">
+  <div class="cd"><h3>Faixa etária</h3><p class="hn">Clique em uma barra para filtrar.</p><div class="cv"><canvas id="cI"></canvas></div></div>
+  <div class="cd"><h3>Renda mensal</h3><p class="hn">Faixas de renda declaradas.</p><div class="cv"><canvas id="cR"></canvas></div></div>
+  <div class="cd"><h3>Redes mais usadas</h3><p class="hn">Multirresposta: uma pessoa pode usar várias redes.</p><div class="cv"><canvas id="cM"></canvas></div></div>
+  <div class="cd"><h3>Tempo diário nas redes</h3><p class="hn">Horas por dia, autodeclaradas.</p><div class="cv"><canvas id="cT"></canvas></div></div>
+ </div>
+</section>
+
+<section class="pn" id="consumo" hidden>
+ <div class="g2">
+  <div class="cd"><h3>Consumo de conteúdo financeiro</h3><p class="hn">Nota de 1 (nunca) a 5 (muito).</p><div class="cv"><canvas id="cK"></canvas></div></div>
+  <div class="cd"><h3>Confiança em influenciadores</h3><p class="hn">Para decisões financeiras.</p><div class="cv"><canvas id="cF"></canvas></div></div>
+  <div class="cd" style="grid-column:1/-1"><h3>Decisões por recomendação, segundo o nível de consumo</h3><p class="hn">Cada barra soma 100%. Quanto mais conteúdo financeiro, maior a fatia de quem já decidiu por recomendação.</p><div class="cv"><canvas id="cKD"></canvas></div></div>
+ </div>
+</section>
+
+<section class="pn" id="decisao" hidden>
+ <div class="g2">
+  <div class="cd"><h3>Já decidiu investir por recomendação?</h3><p class="hn">Clique em uma fatia para filtrar.</p><div class="cv"><canvas id="cD"></canvas></div></div>
+  <div class="cd"><h3>Prejuízo e lucro entre quem decidiu</h3><p class="hn">Percentual de cada grupo que relata prejuízo ou lucro.</p><div class="cv"><canvas id="cPL"></canvas></div></div>
+ </div>
+</section>
+
+<section class="pn" id="pressao" hidden>
+ <div class="g2">
+  <div class="cd"><h3>Sentem pressão para investir, por nível de consumo</h3><p class="hn">Percentual que se sentiu pressionado ao ver ganhos alheios.</p><div class="cv"><canvas id="cS"></canvas></div></div>
+  <div class="cd"><h3>Sentem pressão, por faixa etária</h3><p class="hn">Mesmo indicador, por idade.</p><div class="cv"><canvas id="cSI"></canvas></div></div>
+  <div class="cd" style="grid-column:1/-1"><h3>Critério mais importante ao investir</h3><p class="hn">Texto livre agrupado em 6 categorias.</p><div class="cv"><canvas id="cX"></canvas></div></div>
+ </div>
+</section>
+
+<section class="pn" id="estat" hidden>
+ <div class="cd" style="margin-bottom:14px"><h3>Matriz de correlação de Spearman (recalculada com os filtros)</h3><div class="ov" id="ht"></div></div>
+ <h3>Testes de hipótese (amostra completa)</h3>
+ <p class="hn">Calculados em Python (02_analise.py). Os valores de p são ajustados pelo método de Bonferroni, porque vários testes aumentam a chance de falso positivo. Clique em um teste para ver a leitura.</p>
+ <div id="ts"></div>
+</section>
+
+<section class="pn" id="insights" hidden>
+ <div class="cd" style="margin-bottom:14px"><h3>Leitura automática do recorte atual</h3><ul id="in"></ul></div>
+ <div class="cd"><h3>Hipóteses de ação (validar com dados reais)</h3>
+ <ul><li>Conteúdo educativo sobre risco e retorno para quem consome muito e já decidiu por recomendação.</li>
+ <li>Alertas de que mostrar ganhos nas redes cria pressão social: quem se sente pressionado tende a consumir mais conteúdo financeiro.</li>
+ <li>Reforçar a pesquisa própria e a checagem de fontes, que aparecem entre os critérios citados.</li></ul></div>
+</section>
+
+<section class="pn" id="metodo" hidden>
+ <div class="cd" style="margin-bottom:14px"><h3>Fonte e método</h3>
+ <ul><li>Base de 100 respostas <b>simuladas por computador</b>, no formato do Google Forms. Nomes e e-mails fictícios. Será substituída pela coleta real.</li>
+ <li>Python: <code>01_tratamento.py</code> (limpeza, anonimização, codificação), <code>02_analise.py</code> (descritiva e testes não paramétricos), <code>03_gera_dashboard.py</code> (este painel).</li>
+ <li>Limitações: amostra pequena, cerca de 90% com 18 a 29 anos, respostas autodeclaradas e correlação não implica causa.</li></ul></div>
+ <div class="cd"><h3>Dicionário de dados</h3><div class="ov"><table id="dc"></table></div></div>
+</section>
+</main>
+<footer>Projeto de Ciência de Dados e Programação, Prof. Dr. Bruno Henrique Oliveira Mulina. Os números acima descrevem dados simulados e não representam pessoas reais.</footer>
+
+<script>
+const D={"L":{"g":["Feminino","Masculino","Prefiro não dizer"],"i":["18-20","21-23","24-26","27-29","30+"],"r":["Até 1,5 mil","1,5–3 mil","3–5 mil","5–10 mil","Acima de 10 mil"],"o":["Estudante","Estuda e trabalha","Empregado","Autônomo","Desempregado"],"c":["Capital SP","Grande SP","Interior SP","Fora de SP"],"t":["0 - 2 Horas","2 - 4 Horas","4 - 6 Horas","6 - 8 Horas","+ 8 Horas"],"k":["1","2","3","4","5"],"f":["Não confia","Confia pouco","Depende","Confia muito"],"d":["Nunca decidiu","Decidiu, não repetiria","Decidiu poucas vezes","Decidiu muitas vezes"],"n":["Não","Sim"],"p":["Não","Sim"],"l":["Não","Sim"],"s":["Não","Sim"],"x":["Segurança e baixo risco","Retorno e rentabilidade","Risco x retorno e objetivos","Conhecimento e pesquisa","Liquidez","Ainda não investe"],"m":["Instagram","Youtube","Linkedin","Tiktok","X (Twitter)","Threads","Facebook"]},"T":{"g":"Gênero","i":"Idade","r":"Renda","o":"Ocupação","c":"Cidade","t":"Tempo nas redes","k":"Consumo de conteúdo financeiro","f":"Confiança","d":"Decisão por recomendação","n":"Influenciado","p":"Prejuízo","l":"Lucro","s":"Pressão","x":"Critério principal","m":"Rede social"},"R":[[1,1,0,0,1,0,2,1,2,1,0,1,0,0,1],[1,3,2,3,0,2,1,1,0,0,0,0,0,3,5],[1,2,3,2,1,2,1,1,0,0,0,0,0,3,15],[1,2,3,3,1,4,2,3,3,1,1,1,0,1,15],[1,2,3,1,1,1,0,0,1,0,0,1,0,3,21],[1,3,2,1,1,3,1,2,3,1,1,1,0,0,19],[1,3,4,2,0,3,3,0,2,1,1,1,1,2,43],[1,1,1,0,3,2,2,1,0,0,0,0,1,3,11],[1,3,4,3,1,3,2,1,2,1,0,1,0,1,29],[1,0,0,0,1,1,0,2,2,1,0,1,1,0,1],[1,1,1,4,1,2,1,2,0,0,0,0,0,5,13],[1,0,1,0,3,2,4,0,3,1,1,1,1,3,73],[1,4,3,2,3,1,2,1,0,0,0,0,0,3,4],[0,4,2,2,1,1,1,0,0,0,0,0,1,0,3],[1,0,3,2,1,1,2,1,2,0,0,1,0,1,3],[1,4,3,3,0,2,1,2,2,1,1,1,0,0,3],[0,0,2,2,0,0,2,1,2,1,0,0,0,1,9],[0,1,0,0,2,1,4,2,3,1,1,1,0,0,11],[0,2,2,2,1,2,0,1,2,1,0,0,1,4,25],[0,1,2,2,2,4,2,3,2,1,0,1,1,0,23],[0,3,4,2,0,1,1,3,2,1,0,0,0,3,5],[0,1,2,2,0,3,4,0,0,0,0,0,1,2,31],[1,1,2,3,1,1,3,1,2,1,1,1,1,2,11],[1,1,1,0,1,2,2,1,2,1,1,0,0,0,29],[2,2,2,0,1,2,3,1,2,1,0,0,1,3,7],[0,3,4,3,1,2,3,2,2,1,0,1,1,2,7],[1,1,2,2,1,1,4,2,2,0,0,0,1,2,19],[1,1,3,2,2,3,2,2,1,1,1,0,0,3,15],[0,3,3,2,0,2,1,1,2,0,0,0,0,0,5],[1,2,2,3,2,2,3,2,2,1,0,0,0,3,23],[1,1,0,0,1,2,2,2,3,1,0,1,1,5,3],[0,2,4,2,1,2,3,2,2,1,0,0,1,3,7],[1,1,0,0,1,0,1,2,2,1,0,0,0,5,1],[0,1,1,2,0,2,3,2,2,1,0,1,1,1,69],[0,0,1,0,1,1,2,1,3,1,0,1,1,0,3],[1,0,1,0,0,2,3,2,2,1,0,0,1,1,10],[0,0,1,2,1,1,2,2,0,0,0,0,0,1,5],[0,2,4,2,0,3,2,2,2,1,0,0,1,1,5],[2,4,4,2,1,1,2,2,3,1,0,1,0,0,11],[0,2,3,2,1,3,3,1,2,1,0,0,0,2,87],[2,4,4,2,3,2,1,0,2,1,0,0,1,0,7],[1,2,2,2,1,3,3,2,3,1,0,1,1,3,7],[0,4,3,1,1,3,4,2,2,1,1,1,1,2,23],[1,1,1,0,1,2,1,0,2,1,0,0,1,3,5],[1,2,3,2,1,1,3,2,0,1,0,0,1,2,9],[1,3,3,2,1,1,3,0,0,1,0,0,1,3,17],[0,3,3,2,2,1,1,2,0,0,0,0,0,3,3],[2,4,3,2,0,1,2,2,0,0,0,0,0,0,7],[2,0,0,0,0,2,2,1,2,0,1,0,1,5,9],[0,0,0,0,2,2,4,1,2,1,0,1,1,5,7],[0,2,1,4,0,1,0,0,0,0,0,0,0,1,1],[0,3,2,2,1,4,2,2,2,1,0,1,0,0,27],[0,3,3,3,1,4,4,0,3,1,1,1,1,3,31],[0,0,0,0,0,4,3,1,2,0,1,0,1,5,27],[0,0,0,0,1,2,1,1,0,0,0,0,0,0,7],[1,1,1,0,0,4,3,0,1,0,1,0,1,0,31],[1,1,1,0,2,1,1,1,0,0,0,0,0,0,5],[1,3,4,2,1,2,2,0,2,1,1,0,0,0,103],[0,1,2,2,0,2,3,2,3,0,1,0,0,2,9],[0,0,1,0,0,2,3,3,1,1,1,0,1,0,43],[1,0,0,0,0,1,1,1,0,0,0,0,0,0,32],[0,0,1,2,0,2,3,2,0,0,0,0,0,0,19],[1,4,3,1,0,2,1,2,2,1,0,0,1,4,69],[0,0,0,0,0,3,0,0,2,1,1,0,0,4,12],[0,2,3,2,0,1,3,2,2,1,0,0,0,2,21],[1,1,2,1,1,1,3,1,0,0,0,0,1,2,9],[1,0,1,0,1,1,4,1,1,1,1,1,1,1,28],[0,1,0,0,0,0,2,1,2,1,0,0,1,1,3],[0,0,0,0,0,1,0,0,2,1,0,0,0,5,11],[1,4,4,2,1,3,2,2,3,0,0,0,0,2,39],[1,1,1,0,1,1,2,1,2,0,1,0,0,1,3],[0,1,0,4,1,2,0,1,0,0,0,0,0,5,9],[1,1,0,1,1,2,2,1,2,1,1,0,1,5,3],[1,2,1,0,1,0,3,2,0,0,0,0,1,0,1],[0,1,2,1,2,2,1,0,0,0,0,0,1,0,69],[0,4,4,2,3,1,1,3,1,1,1,0,1,3,7],[0,3,2,2,0,2,0,1,2,1,1,0,1,0,23],[1,1,2,2,0,3,4,1,3,1,0,0,1,3,55],[0,1,0,0,2,2,1,2,0,0,0,0,1,3,11],[0,0,0,0,2,1,2,0,1,1,1,1,0,5,9],[1,2,2,2,1,4,1,2,0,0,0,0,0,0,27],[1,0,0,0,0,2,2,2,2,1,0,0,1,5,65],[0,2,3,2,1,3,3,0,2,1,0,1,1,3,31],[1,3,3,2,1,0,2,1,1,1,1,0,0,0,5],[0,1,3,2,2,0,2,2,2,1,1,1,1,0,3],[0,3,3,2,1,1,1,0,2,1,1,0,0,0,17],[0,0,2,0,1,2,2,2,2,1,0,0,0,0,9],[0,2,2,2,0,1,2,2,2,1,0,1,1,1,13],[1,0,0,0,1,3,2,2,1,0,1,1,0,0,31],[1,1,1,0,1,0,3,2,3,0,0,1,0,2,7],[0,1,2,3,0,2,2,2,0,1,0,0,1,1,15],[0,1,2,0,0,2,0,1,2,1,1,1,0,0,9],[2,2,3,2,0,2,1,2,1,1,1,1,0,0,27],[1,3,3,2,1,3,3,2,3,1,0,1,1,3,31],[1,0,1,1,0,2,0,0,0,0,0,0,0,0,5],[0,1,2,2,3,1,2,1,1,1,0,1,1,1,11],[1,3,2,3,1,1,1,1,0,0,0,0,0,0,37],[0,1,1,1,3,2,4,2,3,1,0,0,1,0,13],[1,1,1,3,1,2,2,1,2,1,0,0,1,1,31],[1,2,3,2,0,1,3,2,3,1,0,1,1,2,15]],"S":[{"t":"H1: Quem consome mais conteúdo financeiro decide mais por recomendação?","e":"ρ de Spearman = 0,33 (IC95% 0,13 a 0,50)","p":0.0009094692900515821,"ef":"correlação moderado","pa":0.010913631480618986,"r":"Significativo a 5% mesmo após a correção de Bonferroni para 12 testes."},{"t":"H2: Quem consome mais confia mais em influenciadores?","e":"ρ de Spearman = 0,15 (IC95% -0,06 a 0,35)","p":0.134763471756216,"ef":"correlação fraco","pa":1.0,"r":"Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."},{"t":"Consumo de conteúdo financeiro × tempo diário nas redes","e":"ρ de Spearman = 0,14 (IC95% -0,07 a 0,34)","p":0.17240028894383225,"ef":"correlação fraco","pa":1.0,"r":"Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."},{"t":"Consumo de conteúdo financeiro × número de redes usadas","e":"ρ de Spearman = 0,35 (IC95% 0,15 a 0,52)","p":0.0003792676450317773,"ef":"correlação moderado","pa":0.004551211740381328,"r":"Significativo a 5% mesmo após a correção de Bonferroni para 12 testes."},{"t":"Confiança em influenciadores × decisões tomadas por recomendação","e":"ρ de Spearman = 0,18 (IC95% -0,03 a 0,37)","p":0.0748332071531188,"ef":"correlação fraco","pa":0.8979984858374255,"r":"Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."},{"t":"H3: Sentir pressão está associado a dizer que é influenciado?","e":"χ² = 7,09; V de Cramér = 0,27","p":0.007740687589406888,"ef":"associação pequena","pa":0.09288825107288266,"r":"Significativo a 5% isoladamente, mas não resiste à correção para 12 testes: trate como indício."},{"t":"Sentir pressão × já ter decidido por recomendação","e":"χ² = 1,58; V de Cramér = 0,13","p":0.20813746735529878,"ef":"associação pequena","pa":1.0,"r":"Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."},{"t":"H4: Quem sente pressão consome mais conteúdo financeiro?","e":"U = 1817; r = 0,45; mediana 4 vs 3","p":5.3298415793634004e-05,"ef":"efeito moderado","pa":0.0006395809895236081,"r":"Significativo a 5% mesmo após a correção de Bonferroni para 12 testes."},{"t":"Gênero × sentir pressão (apenas Feminino e Masculino)","e":"χ² = 0,39; V de Cramér = 0,06","p":0.5297798828850608,"ef":"associação desprezível","pa":1.0,"r":"Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."},{"t":"H5: O consumo de conteúdo difere entre faixas de renda?","e":"H = 3,65; ε² = -0,004","p":0.4554331124828336,"ef":"efeito desprezível","pa":1.0,"r":"Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."},{"t":"Consumo de conteúdo difere entre faixas de idade?","e":"H = 2,71; ε² = -0,014","p":0.6082371940747127,"ef":"efeito pequeno","pa":1.0,"r":"Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."},{"t":"Consumo de conteúdo difere entre ocupações?","e":"H = 7,02; ε² = 0,032","p":0.1350670686180034,"ef":"efeito pequeno","pa":1.0,"r":"Sem evidência de associação nesta amostra. Isso não prova que a relação não exista."}],"dic":[["id","texto","Identificador anônimo (P001...) criado na limpeza; substitui nome e e-mail"],["data_hora","data/hora","Carimbo de resposta do formulário"],["genero","nominal","Gênero autodeclarado"],["idade","ordinal","Faixa etária (18-20, 21-23, 24-26, 27-29, 30+)"],["cidade","nominal","Localização agrupada em 4 categorias"],["ocupacao","nominal","Ocupação principal"],["renda","ordinal","Faixa de renda mensal (5 faixas)"],["tempo_tela","ordinal","Tempo diário em redes sociais (5 faixas); tempo_cod = 1 a 5"],["consumo","ordinal 1-5","Frequência de consumo de conteúdo sobre dinheiro e investimentos"],["confianca","ordinal","Confiança em influenciadores para decisões financeiras; confianca_cod = 1 a 4"],["decisao","ordinal","Já decidiu investir por recomendação nas redes; decisao_cod = 0 a 3"],["influencia","binária 0/1","Redes sociais influenciam suas decisões (1 = sim)"],["prejuizo","binária 0/1","Já teve prejuízo ligado a conteúdo de redes (1 = sim)"],["lucro","binária 0/1","Já teve lucro ligado a conteúdo de redes (1 = sim)"],["pressao","binária 0/1","Sentiu pressão para investir ao ver ganhos de outros (1 = sim)"],["fator_categoria","nominal","Fator mais importante na decisão, agrupado em 6 categorias (original em fator_texto)"],["rede_*","binária 0/1","Uma coluna por rede social usada (multirresposta em dummies); n_redes = soma"],["indice_exposicao","numérico 1-5","Média de tempo_cod e consumo (resume a exposição a conteúdo financeiro)"],["flag_inconsistente","binária 0/1","1 = diz ser influenciado pelas redes, mas nunca decidiu por recomendação"],["origem","texto","SIMULADO nesta versão; trocar por REAL quando a coleta for feita"]]},L=D.L,T=D.T,K=['g','i','r','o','c','t','k','f','d','n','p','l','s','x'],ix={};
+K.forEach((k,j)=>ix[k]=j);
+const F={},$=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+let PC=false;
+const css=v=>getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const pct=(a,b)=>b?100*a/b:0,yes=(R,c)=>pct(R.filter(r=>r[c]==1).length,R.length);
+const rows=()=>D.R.filter(r=>K.every(k=>!F[k]||F[k].has(r[ix[k]]))&&(!F.m||[...F.m].some(b=>r[14]>>b&1)));
+const cnt=(R,k)=>{const a=L[k].map(()=>0);R.forEach(r=>a[r[ix[k]]]++);return a};
+const lab=(k,v)=>L[k][v];
+const sel=(k,i)=>!F[k]||F[k].has(i);
+const pal=()=>[css('--ac'),css('--a2'),css('--ng'),css('--a3')],dc=()=>[css('--ln'),css('--ng'),css('--a3'),css('--ac')];
+function tog(k,v){const s=F[k]||(F[k]=new Set());s.has(v)?s.delete(v):s.add(v);if(!s.size)delete F[k];upd()}
+
+const simple=k=>{const R=rows(),c=cnt(R,k);return{labels:L[k],datasets:[{data:c.map(v=>PC?pct(v,R.length):v),backgroundColor:L[k].map((_,i)=>sel(k,i)?css('--ac'):css('--ln'))}]}};
+const donut=(k,cols)=>{const R=rows(),c=cnt(R,k),P=cols();return{labels:L[k],datasets:[{data:c.map(v=>PC?pct(v,R.length):v),backgroundColor:P.map((p,i)=>sel(k,i)?p:p+'44'),borderColor:css('--sf')}]}};
+const redes=()=>{const R=rows();return{labels:L.m,datasets:[{data:L.m.map((_,b)=>{const v=R.filter(r=>r[14]>>b&1).length;return PC?pct(v,R.length):v}),backgroundColor:L.m.map((_,b)=>!F.m||F.m.has(b)?css('--ac'):css('--ln'))}]}};
+const stackKD=()=>{const R=rows(),P=dc();return{labels:L.k.map(v=>'Nota '+v),datasets:L.d.map((n,j)=>({label:n,backgroundColor:P[j],data:L.k.map((_,a)=>{const g=R.filter(r=>r[6]==a);return pct(g.filter(r=>r[8]==j).length,g.length)})}))}};
+const plD=()=>{const R=rows();return{labels:L.d.slice(1),datasets:[['Prejuízo',10,'--ng'],['Lucro',11,'--ps']].map(([n,c,v])=>({label:n,backgroundColor:css(v),data:[1,2,3].map(j=>yes(R.filter(r=>r[8]==j),c))}))}};
+const sBy=(k,col)=>()=>{const R=rows(),j=ix[k];return{labels:L[k].map(v=>k=='k'?'Nota '+v:v),datasets:[{label:'% pressionados',backgroundColor:css(col),data:L[k].map((_,a)=>yes(R.filter(r=>r[j]==a),12))}]}};
+
+const CH={
+ cI:{t:'bar',k:'i',d:()=>simple('i')},
+ cR:{t:'bar',k:'r',d:()=>simple('r')},
+ cT:{t:'bar',k:'t',d:()=>simple('t')},
+ cM:{t:'bar',h:1,d:redes,c:i=>tog('m',i)},
+ cK:{t:'bar',k:'k',d:()=>simple('k')},
+ cF:{t:'doughnut',k:'f',d:()=>donut('f',pal)},
+ cKD:{t:'bar',st:1,p:1,k:'k',d:stackKD},
+ cD:{t:'doughnut',k:'d',d:()=>donut('d',dc)},
+ cPL:{t:'bar',p:1,k:'d',off:1,d:plD},
+ cS:{t:'bar',p:1,k:'k',d:sBy('k','--a2')},
+ cSI:{t:'bar',p:1,k:'i',d:sBy('i','--a3')},
+ cX:{t:'bar',h:1,k:'x',d:()=>simple('x')}
+};
+function build(){
+ Chart.defaults.font.family="'IBM Plex Sans',system-ui,sans-serif";
+ for(const id in CH){const c=CH[id],val=c.h?'x':'y',dn=c.t=='doughnut';
+  c.ch=new Chart($('#'+id),{type:c.t,data:{labels:[],datasets:[]},options:{
+   indexAxis:c.h?'y':'x',maintainAspectRatio:false,
+   onClick:(e,els)=>{if(!els.length)return;const i=els[0].index;c.c?c.c(i):tog(c.k,i+(c.off||0))},
+   plugins:{legend:{display:dn||!!c.st||id=='cPL',position:'bottom'},
+    tooltip:{callbacks:{label:x=>{const v=dn?x.parsed:x.parsed[val],p=PC||c.p;return(dn?x.label:(x.dataset.label||''))+': '+v.toFixed(p?1:0)+(p?'%':'')}}}},
+   scales:dn?{}:{x:{stacked:!!c.st,beginAtZero:true,grid:{display:false}},y:{stacked:!!c.st,beginAtZero:true,...(c.st?{max:100}:{})}}}})}
+}
+
+const fmt=(v,u)=>u=='%'?v.toFixed(0)+'%':v.toFixed(1).replace('.',',')+u;
+const dd=R=>R.filter(r=>r[8]>0);
+const KP=[['Já decidiram por recomendação',R=>pct(dd(R).length,R.length),'%'],['Dizem ser influenciados pelas redes',R=>yes(R,9),'%'],['Sentem pressão para investir',R=>yes(R,12),'%'],['Consumo médio de conteúdo financeiro',R=>R.length?R.reduce((a,r)=>a+r[6]+1,0)/R.length:0,'/5'],['Prejuízo entre quem decidiu',R=>yes(dd(R),10),'%'],['Lucro entre quem decidiu',R=>yes(dd(R),11),'%']];
+function kpis(R){$('#kp').innerHTML=KP.map(([n,f,u])=>`<div class="kc"><b>${fmt(f(R),u)}</b>${n}<small>amostra total: ${fmt(f(D.R),u)}</small></div>`).join('')}
+
+function chips(){$('#fl').innerHTML=[...'girot','m'].map(k=>`<div class="gr"><span>${T[k]}</span>${L[k].map((n,j)=>`<button type="button" class="ch${F[k]&&F[k].has(j)?' on':''}" data-k="${k}" data-v="${j}">${n}</button>`).join('')}</div>`).join('')}
+function pills(){const ks=Object.keys(F);$('#nn').textContent='n = '+rows().length+' de '+D.R.length;$('#ap').innerHTML=ks.map(k=>`<span class="pl">${T[k]}: ${[...F[k]].map(v=>lab(k,v)).join(', ')}</span>`).join('');$('#cl').hidden=!ks.length}
+
+const V=[['Consumo',6],['Tempo de tela',5],['Confiança',7],['Decisão',8],['Pressão',12],['Influência',9]];
+const ranks=a=>{const o=a.map((v,i)=>[v,i]).sort((x,y)=>x[0]-y[0]),r=[];for(let i=0;i<o.length;){let j=i;while(j+1<o.length&&o[j+1][0]==o[i][0])j++;for(let q=i;q<=j;q++)r[o[q][1]]=(i+j)/2+1;i=j+1}return r};
+const pe=(a,b)=>{const n=a.length,ma=a.reduce((x,y)=>x+y)/n,mb=b.reduce((x,y)=>x+y)/n;let s=0,x=0,y=0;for(let i=0;i<n;i++){s+=(a[i]-ma)*(b[i]-mb);x+=(a[i]-ma)**2;y+=(b[i]-mb)**2}return x&&y?s/Math.sqrt(x*y):NaN};
+function heat(R){const el=$('#ht');if(R.length<10){el.innerHTML='<p class="hn">Menos de 10 respondentes no filtro: as correlações ficam instáveis demais para exibir.</p>';return}
+ const rk=V.map(([,c])=>ranks(R.map(r=>r[c])));
+ let h='<table><tr><th></th>'+V.map(v=>`<th>${v[0]}</th>`).join('')+'</tr>';
+ V.forEach((a,i)=>{h+=`<tr><th>${a[0]}</th>`+V.map((b,j)=>{const r=i==j?1:pe(rk[i],rk[j]),ok=!isNaN(r);return `<td style="background:${ok?'color-mix(in srgb,var('+(r>0?'--ac':'--ng')+') '+Math.round(Math.abs(r)*100)+'%,transparent)':'none'}">${ok?r.toFixed(2).replace('.',','):'–'}</td>`}).join('')+'</tr>'});
+ el.innerHTML=h+`</table><p class="hn">n = ${R.length}. Quanto mais forte a cor, maior a associação. Verde-azulado indica relação positiva e rosa, negativa.</p>`}
+
+function ins(R){const n=R.length,f=v=>v.toFixed(0)+'%',el=$('#in');
+ if(n<15){el.innerHTML='<li>Poucos respondentes no filtro (n = '+n+'). Amplie o recorte para ver conclusões mais estáveis.</li>';return}
+ const hi=R.filter(r=>r[6]>=3),lo=R.filter(r=>r[6]<=1),de=dd(R);let h='';
+ if(hi.length>=8&&lo.length>=8)h+=`<li>Quem dá nota 4 ou 5 ao consumo de conteúdo financeiro (n = ${hi.length}) já decidiu por recomendação em ${f(pct(dd(hi).length,hi.length))} dos casos. Entre quem dá nota 1 ou 2 (n = ${lo.length}), são ${f(pct(dd(lo).length,lo.length))}.</li><li>A sensação de pressão para investir aparece em ${f(yes(hi,12))} do grupo de alto consumo, contra ${f(yes(lo,12))} no de baixo consumo.</li>`;
+ const x=cnt(R,'x'),mx=x.indexOf(Math.max(...x));
+ h+=`<li>O critério mais citado ao investir é “${L.x[mx]}”, com ${f(pct(x[mx],n))} das respostas.</li>`;
+ if(de.length>=8)h+=`<li>Entre quem já decidiu por recomendação (n = ${de.length}), ${f(yes(de,11))} relatam lucro e ${f(yes(de,10))} relatam prejuízo.</li>`;
+ el.innerHTML=h}
+
+function upd(){const R=rows();chips();pills();kpis(R);
+ for(const id in CH){const c=CH[id],d=c.d();c.ch.data.labels=d.labels;c.ch.data.datasets=d.datasets;c.ch.update()}
+ heat(R);ins(R)}
+
+const TB=[['visao','Visão geral'],['consumo','Consumo e confiança'],['decisao','Decisão e resultado'],['pressao','Pressão e critérios'],['estat','Estatística'],['insights','Insights'],['metodo','Metodologia']];
+function route(){const h=location.hash.slice(1),id=TB.some(t=>t[0]==h)?h:'visao';
+ $$('.pn').forEach(p=>p.hidden=p.id!=id);$$('#tb a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+id));
+ setTimeout(()=>{for(const i in CH)CH[i].ch.resize()},0)}
+const dark=()=>document.documentElement.dataset.theme?document.documentElement.dataset.theme=='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+function theme(t){if(t)document.documentElement.dataset.theme=t;Chart.defaults.color=css('--mu');Chart.defaults.borderColor=css('--ln');if(CH.cI.ch)upd()}
+const fp=p=>p<.001?'< 0,001':p.toFixed(3).replace('.',',');
+
+$('#tb').innerHTML=TB.map(([i,n])=>`<a href="#${i}">${n}</a>`).join('');
+$('#ts').innerHTML=D.S.map(s=>`<details class="ts"><summary><span>${s.t}</span><b class="${s.pa<.05?'sg':'ns'}">${s.pa<.05?'significativo':s.p<.05?'só sem correção':'não significativo'}</b></summary><p><b>${s.e}</b>; p = ${fp(s.p)}; p ajustado = ${fp(s.pa)}. Efeito: ${s.ef}.</p><p>${s.r}</p></details>`).join('');
+$('#dc').innerHTML='<tr><th>Variável</th><th>Tipo</th><th>Descrição</th></tr>'+D.dic.map(r=>'<tr>'+r.map(c=>`<td>${c}</td>`).join('')+'</tr>').join('');
+$('#fl').addEventListener('click',e=>{const b=e.target.closest('.ch');if(b)tog(b.dataset.k,+b.dataset.v)});
+$('#cl').onclick=()=>{for(const k in F)delete F[k];upd()};
+$('#pc').onchange=e=>{PC=e.target.checked;upd()};
+$('#th').onclick=()=>theme(dark()?'light':'dark');
+$('#pr').onclick=()=>window.print();
+addEventListener('hashchange',route);
+theme();build();upd();route();
+</script>
+</body>
+</html>

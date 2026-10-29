@@ -1,0 +1,55 @@
+﻿categoria,variavel,n,pct
+Masculino,genero,49,49.0
+Feminino,genero,45,45.0
+Prefiro não dizer,genero,6,6.0
+21-23,idade,32,32.0
+18-20,idade,22,22.0
+24-26,idade,19,19.0
+27-29,idade,17,17.0
+30+,idade,10,10.0
+Região Metropolitana de São Paulo,cidade,49,49.0
+Cidade de São Paulo,cidade,33,33.0
+Outra cidade no estado de São Paulo,cidade,11,11.0
+Não moro no estado de São Paulo,cidade,7,7.0
+Empregado,ocupacao,44,44.0
+Estudante,ocupacao,33,33.0
+Autônomo,ocupacao,11,11.0
+Estudante e empregado,ocupacao,9,9.0
+Desempregado,ocupacao,3,3.0
+R$ 3.001–5.000,renda,25,25.0
+R$ 5.001–10.000,renda,24,24.0
+R$ 1.501–3.000,renda,21,21.0
+Até R$ 1.500,renda,19,19.0
+Acima de R$ 10.000,renda,11,11.0
+4 - 6 Horas,tempo_tela,39,39.0
+2 - 4 Horas,tempo_tela,31,31.0
+6 - 8 Horas,tempo_tela,15,15.0
+0 - 2 Horas,tempo_tela,8,8.0
++ 8 Horas,tempo_tela,7,7.0
+3,consumo,33,33.0
+4,consumo,24,24.0
+2,consumo,23,23.0
+1,consumo,10,10.0
+5,consumo,10,10.0
+Depende do influenciador/produtor de conteúdo,confianca,42,42.0
+Considero pouco confiável,confianca,34,34.0
+Não considero confiável,confianca,19,19.0
+Considero muito confiável,confianca,5,5.0
+"Sim, poucas vezes",decisao,47,47.0
+Nunca tomei decisão por recomendação,decisao,26,26.0
+"Sim, muitas vezes",decisao,16,16.0
+"Sim, mas não faria novamente",decisao,11,11.0
+1,influencia,65,65.0
+0,influencia,35,35.0
+0,prejuizo,70,70.0
+1,prejuizo,30,30.0
+0,lucro,65,65.0
+1,lucro,35,35.0
+1,pressao,51,51.0
+0,pressao,49,49.0
+Segurança e baixo risco,fator_categoria,35,35.0
+Conhecimento e pesquisa,fator_categoria,21,21.0
+Retorno e rentabilidade,fator_categoria,16,16.0
+Risco x retorno e objetivos,fator_categoria,14,14.0
+Ainda não investe,fator_categoria,11,11.0
+Liquidez,fator_categoria,3,3.0

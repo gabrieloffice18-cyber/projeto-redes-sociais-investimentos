@@ -1,0 +1,21 @@
+﻿variavel,tipo,descricao
+id,texto,Identificador anônimo (P001...) criado na limpeza; substitui nome e e-mail
+data_hora,data/hora,Carimbo de resposta do formulário
+genero,nominal,Gênero autodeclarado
+idade,ordinal,"Faixa etária (18-20, 21-23, 24-26, 27-29, 30+)"
+cidade,nominal,Localização agrupada em 4 categorias
+ocupacao,nominal,Ocupação principal
+renda,ordinal,Faixa de renda mensal (5 faixas)
+tempo_tela,ordinal,Tempo diário em redes sociais (5 faixas); tempo_cod = 1 a 5
+consumo,ordinal 1-5,Frequência de consumo de conteúdo sobre dinheiro e investimentos
+confianca,ordinal,Confiança em influenciadores para decisões financeiras; confianca_cod = 1 a 4
+decisao,ordinal,Já decidiu investir por recomendação nas redes; decisao_cod = 0 a 3
+influencia,binária 0/1,Redes sociais influenciam suas decisões (1 = sim)
+prejuizo,binária 0/1,Já teve prejuízo ligado a conteúdo de redes (1 = sim)
+lucro,binária 0/1,Já teve lucro ligado a conteúdo de redes (1 = sim)
+pressao,binária 0/1,Sentiu pressão para investir ao ver ganhos de outros (1 = sim)
+fator_categoria,nominal,"Fator mais importante na decisão, agrupado em 6 categorias (original em fator_texto)"
+rede_*,binária 0/1,Uma coluna por rede social usada (multirresposta em dummies); n_redes = soma
+indice_exposicao,numérico 1-5,Média de tempo_cod e consumo (resume a exposição a conteúdo financeiro)
+flag_inconsistente,binária 0/1,"1 = diz ser influenciado pelas redes, mas nunca decidiu por recomendação"
+origem,texto,SIMULADO nesta versão; trocar por REAL quando a coleta for feita

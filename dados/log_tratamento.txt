@@ -1,0 +1,8 @@
+Linhas lidas: 100 | colunas: 20
+Duplicatas removidas: 0
+Colunas com nulos: produtor=100
+Anonimização: removidos nome e e-mail; coluna 'produtor' descartada (100% vazia)
+Ordinais codificadas: tempo_cod (1-5), confianca_cod (1-4), decisao_cod (0-3)
+Fator mais importante: 29 respostas distintas -> 6 categorias
+Respostas inconsistentes (influenciado, mas nunca decidiu): 3 (mantidas e sinalizadas)
+Prejuízo/lucro sem decisão por recomendação: 0
