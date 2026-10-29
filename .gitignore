@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+codigo/vendor/*.js
+dados/reais/
+dados/*_REAL*
+dados/*_brutos*
+.DS_Store
